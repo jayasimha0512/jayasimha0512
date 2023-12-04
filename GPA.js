@@ -23,14 +23,14 @@ function totalGPA() {
   	var gradeFive = document.getElementById('grade5').value.toUpperCase();
 
   	if (isNaN(courseH1) || isNaN(courseH2) || isNaN(courseH3) || courseH1 < 1 || courseH1 > 5 || courseH2 < 1 || courseH2 > 5|| courseH3 < 1 || courseH3 > 5 ||  !/^[A-Da-dFf]$/.test(gradeOne) || !/^[A-Da-dFf]$/.test(gradeTwo) ||	!/^[A-Da-dFf]$/.test(gradeThree)) {
-		alert('Please enter valid values (credit hours between 1 and 4, letter grade A, B, C, D, or F) for a minimum of three courses.');
+		alert('Provide valid values for a minimum of three courses, including credit hours ranging from 1 to 4 and letter grades of A, B, C, D, or F.');
 		return;
 	}
 
 	if(isNaN(courseH4)==false && isNaN(courseH5)==false)
 	{
 		if (courseH4 < 1 || courseH4 > 5 || courseH5 < 1 || courseH5 > 5 ||  !/^[A-Da-dFf]$/.test(gradeFour) || !/^[A-Da-dFf]$/.test(gradeFour)) {
-			alert('Please enter valid values (credit hours between 1 and 4, letter grade A, B, C, D, or F) for a minimum of three courses.');
+			alert('Provide valid values for the courses 3 and 4, with credit hours ranging from 1 to 4 and letter grades of A, B, C, D, or F');
 			return;
 		}
 
